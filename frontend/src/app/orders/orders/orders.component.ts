@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Order } from '../model/order';
+import { OrdersService } from '../services/orders.service';
 
 @Component({
   selector: 'app-orders',
@@ -9,16 +10,20 @@ import { Order } from '../model/order';
 
 export class OrdersComponent implements OnInit {
 
-  orders: Order[] = [
-    {_id:'1', name: 'Alfajor', category:'Doce'}
-  ];
+
+
+  orders: Order[] = [];
   displayedColumns = ['name', 'category']
 
-  constructor() {
+  // ordersService: OrdersService;
 
+  constructor(private ordersService: OrdersService) {
+    // this.ordersService = new OrdersService();
+    this.orders = this.ordersService.list();
   }
 
   ngOnInit(): void {
+    
   }
 
 }
