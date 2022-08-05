@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
 import { Order } from '../model/order';
 import { OrdersService } from '../services/orders.service';
 
@@ -12,7 +13,7 @@ export class OrdersComponent implements OnInit {
 
 
 
-  orders: Order[] = [];
+  orders: Observable<Order[]>;
   displayedColumns = ['name', 'category']
 
   // ordersService: OrdersService;
@@ -23,7 +24,7 @@ export class OrdersComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    
+
   }
 
 }
