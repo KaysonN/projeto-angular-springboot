@@ -11,16 +11,14 @@ import { OrdersService } from '../services/orders.service';
 
 export class OrdersComponent implements OnInit {
 
-
-
-  orders: Observable<Order[]>;
+  orders$: Observable<Order[]>;
   displayedColumns = ['name', 'category']
 
   // ordersService: OrdersService;
 
   constructor(private ordersService: OrdersService) {
     // this.ordersService = new OrdersService();
-    this.orders = this.ordersService.list();
+    this.orders$ = this.ordersService.list();
   }
 
   ngOnInit(): void {
