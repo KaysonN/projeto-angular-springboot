@@ -1,4 +1,4 @@
-package com.kayson.backend;
+package com.kayson;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

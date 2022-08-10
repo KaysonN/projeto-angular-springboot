@@ -1,4 +1,4 @@
-package com.kayson.backend;
+package com.kayson;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
