@@ -14,7 +14,7 @@ import { OrdersService } from '../services/orders.service';
 export class OrdersComponent implements OnInit {
 
   orders$: Observable<Order[]>;
-  displayedColumns = ['name', 'category']
+  displayedColumns = ['_id' ,'name', 'category']
 
   // ordersService: OrdersService;
 

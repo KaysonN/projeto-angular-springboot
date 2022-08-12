@@ -7,7 +7,7 @@ import { Order } from '../model/order';
 })
 export class OrdersService {
 
-  private readonly API = '/assets/orders.json';
+  private readonly API = 'http://localhost:8080/api/courses';
 
   constructor(public httpClient: HttpClient) { }
 
