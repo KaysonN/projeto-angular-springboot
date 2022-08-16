@@ -5,11 +5,13 @@ import { AppMaterialModule } from '../shared/app-material/app-material.module';
 import { SharedModule } from '../shared/shared.module';
 import { OrdersRoutingModule } from './orders-routing.module';
 import { OrdersComponent } from './orders/orders.component';
+import { OrderFormComponent } from './order-form/order-form.component';
 
 
 @NgModule({
   declarations: [
-    OrdersComponent
+    OrdersComponent,
+    OrderFormComponent
   ],
   imports: [
     CommonModule,
