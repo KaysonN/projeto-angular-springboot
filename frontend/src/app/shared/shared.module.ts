@@ -6,9 +6,6 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { OrderPipe } from './pipes/order.pipe';
 
 
-
-
-
 @NgModule({
   declarations: [
     ErrorDialogComponent,
