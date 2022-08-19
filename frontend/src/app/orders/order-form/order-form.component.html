@@ -8,7 +8,15 @@
       </mat-form-field>
 
       <mat-form-field class="formulario-full">
-        <input matInput placeholder="Categoria" formControlName="category" />
+        <mat-label>Categoria</mat-label>
+        <mat-select formControlName="category">
+          <mat-option value="null"></mat-option>
+          <mat-option value="brigadeiro">Brigadeiro</mat-option>
+          <mat-option value="branquinho">Branquinho</mat-option>
+          <mat-option value="doce-de-leite">Doce de Leite</mat-option>
+          <mat-option value="churros">Churros</mat-option>
+        </mat-select>
+        <input matInput/>
       </mat-form-field>
     </form>
   </mat-card-content>

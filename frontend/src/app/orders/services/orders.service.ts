@@ -19,4 +19,8 @@ export class OrdersService {
       tap(orders => console.log(orders)),
     );
   }
+
+  save(record: Order){
+    return this.httpClient.post<Order>(this.API, record);
+  }
 }
