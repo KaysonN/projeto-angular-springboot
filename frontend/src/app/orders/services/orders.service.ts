@@ -20,7 +20,7 @@ export class OrdersService {
     );
   }
 
-  save(record: Order){
+  save(record: Partial<Order>){
     return this.httpClient.post<Order>(this.API, record);
   }
 }

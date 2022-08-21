@@ -19,9 +19,7 @@ public class BackendApplication {
 
 	@Bean
 	CommandLineRunner initDataBase(OrderRepository orderRepository) {
-		return args -> {
-			orderRepository.deleteAll();
-			
+		return args -> {	
 			Order order = new Order();
 			order.setName("Alfajor");
 			order.setCategory("Doce");
